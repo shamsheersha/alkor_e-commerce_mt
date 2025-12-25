@@ -1,3 +1,5 @@
+import 'package:alkor_ecommerce_mt/blocs/product_bloc/product_bloc.dart';
+import 'package:alkor_ecommerce_mt/blocs/product_bloc/product_event.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -32,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     _controller.forward();
 
-    // context.read<ProductBloc>().add(FetchProductsEvent());
+    context.read<ProductBloc>().add(FetchProductsEvent());
 
     Future.delayed(const Duration(seconds: 3), () {
       if (mounted) {
@@ -53,8 +55,8 @@ class _SplashScreenState extends State<SplashScreen>
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: .topLeft,
+            end: .bottomRight,
             colors: [
               Theme.of(context).colorScheme.primary,
               Theme.of(context).colorScheme.secondary,
@@ -63,17 +65,17 @@ class _SplashScreenState extends State<SplashScreen>
         ),
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: .center,
             children: [
               ScaleTransition(
                 scale: _scaleAnimation,
                 child: FadeTransition(
                   opacity: _fadeAnimation,
                   child: Container(
-                    padding: const EdgeInsets.all(32),
+                    padding: const .all(32),
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      shape: BoxShape.circle,
+                      shape: .circle,
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black.withOpacity(0.2),
@@ -97,7 +99,7 @@ class _SplashScreenState extends State<SplashScreen>
                   'Mini E-Commerce',
                   style: TextStyle(
                     fontSize: 32,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: .bold,
                     color: Colors.white,
                     letterSpacing: 1.2,
                   ),
