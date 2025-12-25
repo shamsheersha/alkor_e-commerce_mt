@@ -221,7 +221,7 @@ class CartScreen extends StatelessWidget {
           ],
         ),
         content: const Text(
-          'This is a demo app. In a real application, this would proceed to payment.',
+          'Coming Soon',
         ),
         actions: [
           TextButton(
