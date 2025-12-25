@@ -45,6 +45,7 @@ A modern, feature-rich e-commerce mobile application built with Flutter and BLoC
 - Persistent wishlist state
 
 ### 🎨 Additional Features
+- System Theme Support: Automatically switches between Light and Dark modes based on device settings.
 - Animated splash screen with gradient background
 - Badge counters on cart and wishlist icons
 - Material 3 design with custom theme
